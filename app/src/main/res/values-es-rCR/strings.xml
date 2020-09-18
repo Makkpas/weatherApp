@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Consumidor de Apis</string>
+    <string name="day">Buenos Días</string>
+    <string name="afternoon">Buenas Tardes</string>
+    <string name="night">Buenas Noches</string>
+    <string name="minmax">%1$sº | %2$sº</string>
+    <string name="temperature">%1$sº</string>
+</resources>

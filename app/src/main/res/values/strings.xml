@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ApiConsumer</string>
+    <string name="day">Good Morning</string>
+    <string name="afternoon">Good Afternoon</string>
+    <string name="night">Good Night</string>
+    <string name="minmax">%1$sº | %2$sº</string>
+    <string name="temperature">%1$sº</string>
+</resources>
