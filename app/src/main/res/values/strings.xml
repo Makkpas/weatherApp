@@ -5,4 +5,7 @@
     <string name="night">Good Night</string>
     <string name="minmax">%1$sº | %2$sº</string>
     <string name="temperature">%1$sº</string>
+    <string name="chache_location">Change Location</string>
+    <string name="city">City</string>
+    <string name="change">Change</string>
 </resources>

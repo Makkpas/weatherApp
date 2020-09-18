@@ -7,18 +7,36 @@
     tools:context=".MainActivity"
     android:id="@+id/cl_container">
 
-    <TextView
-        android:id="@+id/tv_greeting"
-        android:layout_width="wrap_content"
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl_appbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buenos días"
-        android:textColor="@color/white"
-        android:layout_marginTop="48dp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="18sp"
-        />
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/t_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/tv_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
     <TextView
         android:id="@+id/tv_temperature"
         android:layout_width="wrap_content"
@@ -27,14 +45,13 @@
         android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_greeting"
+        app:layout_constraintTop_toTopOf="@id/abl_appbar"
         android:textSize="48sp"
         />
     <TextView
         android:id="@+id/tv_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Viernes, parcialmente nublado"
         android:layout_marginTop="16dp"
         android:textSize="16sp"
         android:textColor="@color/white"
